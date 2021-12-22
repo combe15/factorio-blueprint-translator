@@ -29,7 +29,7 @@ function createBlueprintString() {
         document.getElementById("blueprintString").value= ""
         return;
     }
-    var json = JSON.stringify(blueprintJSON);
+    var json = JSON.stringify(JSON.parse(blueprintJSON));
     console.log(json)
 
     var enc = new TextEncoder("utf-8").encode(json);
